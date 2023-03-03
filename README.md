@@ -24,6 +24,7 @@ Each row in the database contains information about one alleged victim. A row ma
 | `disclosed`         | Year the case was disclosed       | String  | `2021`           |
 | `disclosed_by`      | Who the case was disclosed by     | String  | `Citizen Lab`    |
 | `forensics_by`      | Who did the analysis/forensics    | String  | `Microsoft`      |
+| `apple_warning`      | If Apple sent a warning    | Boolean | `FALSE` |
 | `device_os`         | Operating system on the device    | String  | `Windows`        |
 | `attack_attempted`  | If an attack was attempted        | Boolean | `TRUE`           |
 | `attack_successful` | If an attack was successful       | Boolean | `TRUE`           |
