@@ -28,6 +28,7 @@ Each entry contains information about one victim. An entry may contain informati
 | `tech_notified`   | Tech company which notified the victim         | Apple        |
 | `device_type`     | Type of device                                 | iPhone       |
 | `attack_result`   | If the attack was attempted or successful      | Successful   |
+| `lockdown_bypass` | If the attack bypassed Apple's Lockdown Mode   | False        |
 | `attack_vector`   | How the spyware was delivered                  | SMS          |
 | `exploit_name`    | CVE or name of the exploit used                | KISMET       |
 | `first_activity`  | Date of first spyware activity                 | 2018-06-02   |
