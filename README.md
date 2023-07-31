@@ -1,6 +1,6 @@
 # Candiru Victim Database
 
-Granitt is tracking details about victims of Candiru's spyware based on publicly available information. This database is focused on individuals and small groups of people, so you won't find a single entry for the "more than 100 victims" [reported](https://www.microsoft.com/en-us/security/blog/2021/07/15/protecting-customers-from-a-private-sector-offensive-actor-using-0-day-exploits-and-devilstongue-malware/) by Microsoft in 2021. The goal is to make the records as comprehensive as possible by collecting and sorting published reports. The database is updated regularly as more information becomes available.
+This database tracks details about victims of Candiru's spyware. Each entry represents either an individual or a small group of people, such as a team of lawyers. For that reason, you won’t find a single entry for the "more than 100 victims" [reported](https://www.microsoft.com/en-us/security/blog/2021/07/15/protecting-customers-from-a-private-sector-offensive-actor-using-0-day-exploits-and-devilstongue-malware/) by Microsoft in 2021. The goal is to make each entry as comprehensive as possible by collecting and sorting published reports. The database is updated regularly as more information becomes available.
 
 ## How to view the data
 
@@ -12,28 +12,28 @@ To view the data, you can:
 
 ## Schema
 
-Each row in the database contains information about one alleged victim. A row may contain information about small groups of victims, such as a team of lawyers or employees at a media organization, until we have enough details to break it down further.
+Each entry contains information about one victim. An entry may contain information about a small group of people, such as a team of lawyers, until we have enough details to break it down further.
 
-| **Field**           | Description                       | Type    | Example          |
-| ------------------- | --------------------------------- | ------- | ---------------- |
-| `name`              | Name of the victim                | String  | `John Doe`       |
-| `code_name`         | Code name assigned to the victim  | String  | `FRJRN1`         |
-| `role`              | Victim's role at the time         | String  | `Staff`          |
-| `affiliation `      | Victim's affiliation at the time  | String  | `Vocdoni`        |
-| `occurred`          | Year the case occurred            | String  | `2019`           |
-| `disclosed`         | Year the case was disclosed       | String  | `2021`           |
-| `disclosed_by`      | Who the case was disclosed by     | String  | `Citizen Lab`    |
-| `forensics_by`      | Who did the analysis/forensics    | String  | `Microsoft`      |
-| `apple_warning`      | If Apple sent a warning    | Boolean | `FALSE` |
-| `device_os`         | Operating system on the device    | String  | `Windows`        |
-| `attack_attempted`  | If an attack was attempted        | Boolean | `TRUE`           |
-| `attack_successful` | If an attack was successful       | Boolean | `TRUE`           |
-| `attack_vector`     | How the spyware was delivered     | String  | `Email`          |
-| `exploit_name`      | Name of the exploit used          | String  | `CVE-2021-31979` |
-| `first_activity`    | Date of first spyware activity    | String  | `2019-06-02`     |
-| `last_activity`     | Date of last spyware activity     | String  | `2020-07-22`     |
-| `operator`          | Country operating the spyware     | String  | `Spain`          |
-| `sources`           | List of sources                   | String  | `granitt.io`     |
+| Field             | Description                                    | Example      |
+| ----------------- | ---------------------------------------------- | ------------ |
+| `name`            | Name of the victim                             | Sarah Walker |
+| `code_name`       | Code name assigned to the victim               | USJRN1       |
+| `role`            | Victim's role at the time                      | Journalist   |
+| `affiliation`     | Victim's affiliation at the time               | El Faro      |
+| `occurred`        | The year the attack occurred                   | 2018         |
+| `disclosed`       | When the attack was disclosed                  | 2021-10-24   |
+| `disclosed_by`    | Who the attack was disclosed by                | Citizen Lab  |
+| `forensics_by`    | Who did the analysis/forensics                 | Lookout      |
+| `pegasus_project` | If the victim was named by the Pegasus Project | True         |
+| `tech_notified`   | Tech company which notified the victim         | Apple        |
+| `device_type`     | Type of device                                 | iPhone       |
+| `attack_result`   | If the attack was attempted or successful      | Successful   |
+| `attack_vector`   | How the spyware was delivered                  | SMS          |
+| `exploit_name`    | CVE or name of the exploit used                | KISMET       |
+| `first_activity`  | Date of first spyware activity                 | 2018-06-02   |
+| `last_activity`   | Date of last spyware activity                  | 2018-07-22   |
+| `operator`        | Country operating the spyware                  | Mexico       |
+| `sources`         | List of sources                                | amnesty.org  |
 
 ## How to contribute
 
